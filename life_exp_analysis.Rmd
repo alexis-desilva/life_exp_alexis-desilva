@@ -21,9 +21,9 @@ head(gapminder_unfiltered, 10)
 ```
 
 # Abstract
+Here, I re-examine the analysis of Oeppen and Vaupel (2002)
 
-
-# Analysis
+# Life Expectancy Analysis
 ```{r}
 sumdat <- gapminder_unfiltered %>%
   group_by(year) %>%
