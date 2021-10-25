@@ -25,6 +25,12 @@ Here, I re-examine the analysis of Oeppen and Vaupel (2002)
 
 # Life Expectancy Analysis
 ```{r}
+gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp = max(lifeExp))
+```
+
+```{r}
 sumdat <- gapminder_unfiltered %>%
   group_by(year) %>%
   filter(lifeExp == max(lifeExp)) %>%
