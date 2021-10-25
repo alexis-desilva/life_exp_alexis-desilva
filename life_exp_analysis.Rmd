@@ -24,10 +24,14 @@ head(gapminder_unfiltered, 10)
 Here, I re-examine the analysis of Oeppen and Vaupel (2002)
 
 # Life Expectancy Analysis
+Get data * group it
 ```{r}
-gapminder_unfiltered %>%
-  group_by(year) %>%
-  filter(lifeExp = max(lifeExp))
+# sumdat <- gapminder_unfiltered %>%
+#   group_by(year) %>%
+#   filter(lifeExp = max(lifeExp)) %>%
+#   ungroup() %>%
+#   select(year, country, lifeExp) %>%
+#   arrange(year) 
 ```
 
 New Plot
