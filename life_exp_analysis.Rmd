@@ -30,6 +30,7 @@ gapminder_unfiltered %>%
   filter(lifeExp = max(lifeExp))
 ```
 
+New Plot
 ```{r}
 sumdat <- gapminder_unfiltered %>%
   group_by(year) %>%
